@@ -1,0 +1,97 @@
+.header-logo{
+    float: left;
+    width: 185px;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 2.5em;
+    color: #ae7ddb;
+    animation: changeColor 6s alternate infinite;
+    -webkit-animation: changeColor 6s alternate infinite;
+}
+@keyframes changeColor {
+    0% {
+        color: #ae7ddb
+    }
+
+    16% {
+        color: #fb648a
+    }
+
+    32% {
+        color: #76d6a6
+    }
+
+    48% {
+        color: #8080ff
+    }
+
+    64% {
+        color: #ff80c6
+    }
+
+    82% {
+        color: #faa369
+    }
+
+    100% {
+        color: #e87171
+    }
+}
+
+@-webkit-keyframes changeColor {
+    0% {
+        color: #ae7ddb
+    }
+
+    16% {
+        color: #fb648a
+    }
+
+    32% {
+        color: #76d6a6
+    }
+
+    48% {
+        color: #8080ff
+    }
+
+    64% {
+        color: #ff80c6
+    }
+
+    82% {
+        color: #faa369
+    }
+
+    100% {
+        color: #e87171
+    }
+}
+.navbar{
+	margin: 20px;
+}
+.navbar-nav{
+	float: right;
+	background: #48AE15;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 46px;
+    float: right;
+    padding: 0 20px;
+}
+.navbar-nav a{
+	display: inline-block;
+    font-size: 18px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-nav a:hover{
+    text-decoration: none;
+}
+.navbar-nav .active{
+	background: #F3FF41;
+    color: #000;
+}

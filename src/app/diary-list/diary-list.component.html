@@ -1,0 +1,12 @@
+<div class="diary-box" [@fadeIn]="'active'">
+	<ul class="clearfix">
+		<li *ngFor="let diary of diarys | paginate: { itemsPerPage: 10, currentPage: page, totalItems: total,id: 'server' }">
+			<p class="diary-text">
+				<img *ngIf="diary.diaryImg" src="{{diary.diaryImg}}" alt="">
+				{{diary.diaryText}}
+			</p>
+			<span class="diary-time">{{diary.thisTime}}</span>
+		</li>
+	</ul>
+	<pagination-controls (pageChange)="getPage($event)" id="server"></pagination-controls>
+</div>

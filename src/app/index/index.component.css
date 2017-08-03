@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.body-main-left {
+    width: 670px;
+    float: left;
+}
+.banner-box {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.article-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #333;
+    border-bottom: #db6d4c 4px solid;
+    margin-top: 20px;
+}
+.article-title-more {
+    color: #333;
+    float: right;
+    margin-right: 10px;
+}
+
+.img-box {
+    overflow: hidden;
+    max-height: 150px;
+    float: left;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.img-box img {
+    display: block;
+    width: 100%
+}
+
+/*文章开始*/
+.article-box {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc
+}
+
+.article {
+    float: left;
+    width: 100%;
+    line-height: 22px;
+    color: #756F71;
+    vertical-align: middle
+}
+.article.w75{
+    width: 75%;
+}
+.article-box img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+.article .title {
+    width: 100%;
+    text-indent: 0
+}
+
+.article .title a {
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .5s;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    color: #000;
+    text-overflow: ellipsis
+}
+
+.article .title a:hover {
+    color: #066;
+    text-decoration: underline
+}
+.article-text a {
+    color: #756F71;
+}
+.autor {
+    overflow: hidden;
+    clear: both;
+    margin: 10px 0;
+    color: #838383;
+    width: 100%
+}
+
+.autor span {
+    margin: 0 10px 0 0;
+    padding-left: 20px
+}
+
+.dtime,.lm {
+    float: left
+}
+
+.pingl,.viewnum {
+    float: right
+}
+.pingl a,
+.viewnum a{
+	color: #333;
+}
+.lm a {
+    color: #759b08
+}
+
+.lm {
+    background: url(http://marryyou.cc/images/icon/newsbg01.png) no-repeat left center
+}
+
+.dtime {
+    background: url(http://marryyou.cc/images/icon/newsbg02.png) no-repeat left center
+}
+
+.pingl {
+    background: url(http://marryyou.cc/images/icon/newsbg04.png) no-repeat left center
+}
+
+.viewnum {
+    background: url(http://marryyou.cc/images/icon/newsbg03.png) no-repeat left center
+}
+
+.article .article-text {
+    max-height: 66px;
+    text-indent: 0;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+.autor-left, 
+.autor-right {
+    width: 50%;
+    font-weight: 400;
+    float: left;
+}
+/*文章结束*/
+.body-main-right {
+    width: 300px;
+    float: right;
+}

@@ -1,0 +1,30 @@
+<!-- <p>
+  index works!
+</p> -->
+<div class="clearfix" [@fadeIn]="'active'">
+  <div class="body-main-left">
+    <p class="user-position clearfix" *ngIf="selectedId != 'undefined'">
+      <a routerLink="/index" title="首页" class="indexPage">首页</a>
+      <a routerLink="/articleList" class="column">文章</a>
+      <a href="javascript:;" noLink="true" class="classify">{{selectedId}}</a>
+    </p>
+    <div class="body-main-left-article-box" *ngIf="articles">
+      <div class="article-box clearfix" *ngFor="let article of articles | paginate: { itemsPerPage: 10, currentPage: page, totalItems: total,id: 'server' }">
+          <div class="img-box" *ngIf="article.imgSrc"><a href="http://marryyou.cc/article/{{article.id}}/" target="_blank"><img src="{{article.imgSrc}}" alt=""></a></div>
+          <div class="article" [class.w75]="article.imgSrc">
+              <h3 class="title"><a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">{{article.articleTitle}}</a></h3>
+              <p class="article-text"><a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">{{article.article}}</a></p>
+              <p class="autor">
+                <strong class="autor-left"><span class="lm"><a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">个人</a></span> <span class="dtime">2017-02-06</span></strong>
+                <strong class="autor-right"><span class="pingl">浏览（<a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">{{article.viewNum}}</a>）</span> <span class="viewnum">评论（<a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">{{article.commentNum}}</a>）</span> </strong> 
+              </p>
+          </div>
+      </div>
+    </div>
+    <img *ngIf="!articles" src="http://marryyou.cc/images/noArticle.png" alt="" class="no-article">
+    <pagination-controls *ngIf="total > 10" (pageChange)="getPage($event)" id="server"></pagination-controls>
+  </div>
+  <div class="body-main-right">
+    <right-label></right-label>
+  </div>
+</div>
