@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
     private titleService: Title
   ) {}
   ngOnInit() {
+     document.getElementById("loading").style.display = "none";
     this.router.events
       .filter(event => event instanceof NavigationEnd)
       .map(() => this.activatedRoute)
