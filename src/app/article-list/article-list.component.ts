@@ -58,5 +58,13 @@ export class ArticleListComponent implements OnInit {
 				.subscribe(map => {});
 
 	}
+	
+	getId(id){
+		if(id < 10){
+			return "0"+id
+		}else{
+			return id
+		}
+	}
 
 }

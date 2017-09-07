@@ -22,7 +22,10 @@
         "styles.css",
         "../node_modules/swiper/dist/css/swiper.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/soundmanager2.js",
+        "assets/js/bar-ui.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

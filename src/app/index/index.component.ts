@@ -23,6 +23,15 @@ export class IndexComponent implements OnInit {
 	swipeOptions:any;
 	constructor(
 		private http:Http,) {
+
+		// let data = "http://localhost:3000/users/query";
+		// let params4 = new URLSearchParams();
+		// params4.set('mobile','18058173591');
+		// this.http.post(data,params4).map(res => res.json()).subscribe(
+		// 	data=>{ console.log(data.result) },
+		// 	err=>{ console.log(err) }
+		// )
+
 		// 获取banner
 		let getBannerUrl = "http://marryyou.cc/php/banner.php";
 		let params2 = new URLSearchParams();
@@ -30,6 +39,7 @@ export class IndexComponent implements OnInit {
 			data=>{ this.banners = data.result; },
 			err=>{ console.log(err) }
 		)
+
 		// 对banner进行处理
 		this.swipeOptions = {
 			autoplay:3000,
@@ -51,6 +61,13 @@ export class IndexComponent implements OnInit {
 			data =>{ this.articles = data.data; },
 			err =>{ console.log(err) }
 		)
+	}
+	getId(id){
+		if(id < 10){
+			return "0"+id
+		}else{
+			return id
+		}
 	}
 	ngOnInit() {
 		

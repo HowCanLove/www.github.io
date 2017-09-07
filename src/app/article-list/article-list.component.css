@@ -168,3 +168,152 @@
 .user-position a.indexPage.show {
     display: block;
 }
+
+@media (max-width:1024px) {
+
+    .body-main-right {
+        display: block;
+        width: 670px;
+        margin: 0 auto;
+        float: none;
+    }
+    .body-main-left {
+        margin: 0 auto;
+        float: none;
+    }
+
+}
+@media (max-width:670px) {
+    .body-main-right{
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .user-position{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .article-page .classify-list{
+        padding: 0;
+    }
+
+    .article-main .a-title {
+        font-size: 14px;
+        margin: 0 auto;
+        line-height: 1.5;
+        margin-bottom: 3%
+    }
+
+    .a-status {
+        width: 95%;
+        margin: 0 auto
+    }
+
+    .article-main .a-status span {
+        margin: 0 3px
+    }
+
+    .article-main {
+        margin: 0;
+        padding: 10px 5px
+    }
+
+    .a-title {
+        width: 90%;
+        margin: 0 auto
+    }
+
+    .article-main .mood-box li {
+        display: block;
+        float: left;
+        width: 25%;
+        padding: 0
+    }
+
+    .article-main .mood-box .num-height {
+        display: none
+    }
+
+
+    .article,.img-box {
+        width: 100%;
+        display: block;
+        float: none;
+        padding: 0 5%;
+        max-height: 300px
+    }
+
+    .body-main-left {
+        float: none;
+        margin: 0 auto;
+        width: 100%
+    }
+
+    .article .title {
+        padding-bottom: 0
+    }
+
+    .article .title a {
+        margin-bottom: 0;
+        line-height: 2.5em
+    }
+
+    .autor {
+        width: 100%;
+        margin: 5px auto
+    }
+
+    .autor-left,.autor-right {
+        width: 100%
+    }
+
+    .autor .pingl {
+        float: left
+    }
+
+    .autor .dtime,.autor .viewnum {
+        float: right
+    }
+
+    .article-title {
+        padding-left: 20px
+    }
+
+    .diary-page a {
+        margin-right: 2%
+    }
+
+    .diary-box li {
+        width: 100%
+    }
+
+    .diary-box:after {
+        display: none
+    }
+
+    .diary-text {
+        width: 80%;
+        margin: 0 auto;
+        padding: 3%
+    }
+
+    .diary-time {
+        margin-left: 10%
+    }
+
+    .send-time,.username,.username-position {
+        letter-spacing: -1px
+    }
+
+    .message {
+        text-indent: 0
+    }
+    
+    .article.w75{
+        width: 100%;
+    }
+    .no-article{
+        width: 100%;
+    }
+}

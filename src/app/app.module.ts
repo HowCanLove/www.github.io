@@ -20,6 +20,7 @@ import { IndexComponent } from './index/index.component';
 import { appRoutes } from './app.routes';
 import { LabelComponent } from './label/label.component';
 import { MusicComponent } from './music/music.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MusicComponent } from './music/music.component';
     DiaryListComponent,
     IndexComponent,
     LabelComponent,
-    MusicComponent
+    MusicComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

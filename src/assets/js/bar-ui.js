@@ -147,12 +147,10 @@
     }
 
     function setTitle(item) {
-
       // given a link, update the "now playing" UI.
 
       // if this is an <li> with an inner link, grab and use the text from that.
       var links = item.getElementsByTagName('a');
-
       if (links.length) {
         item = links[0];
       }
@@ -160,7 +158,12 @@
       // remove any failed character sequence, also
       dom.playlistTarget.innerHTML = '<ul class="sm2-playlist-bd"><li>' + item.innerHTML.replace(extras.loadFailedCharacter, '') + '</li></ul>';
 
-      if (dom.playlistTarget.getElementsByTagName('li')[0].scrollWidth > dom.playlistTarget.offsetWidth) {
+      // console.log(dom.playlistTarget.getElementsByTagName('li')[0].scrollHeight, dom.playlistTarget.offsetWidth);
+      // if (dom.playlistTarget.getElementsByTagName('li')[0].scrollWidth >= dom.playlistTarget.offsetWidth) {
+      //   // this item can use <marquee>, in fact.
+      //   dom.playlistTarget.innerHTML = '<ul class="sm2-playlist-bd"><li><marquee>' + item.innerHTML + '</marquee></li></ul>';
+      // }
+      if (dom.playlistTarget.getElementsByTagName('li')[0].scrollHeight > 20) {
         // this item can use <marquee>, in fact.
         dom.playlistTarget.innerHTML = '<ul class="sm2-playlist-bd"><li><marquee>' + item.innerHTML + '</marquee></li></ul>';
       }
@@ -180,11 +183,15 @@
           var progressMaxLeft = 100,
               left,
               width;
-          left = Math.min(progressMaxLeft, Math.max(0, (progressMaxLeft * (this.position / this.durationEstimate)))) + '%';
-          width = Math.min(100, Math.max(0, (100 * (this.position / this.durationEstimate)))) + '%';
+
+          // actionData.volume.x = utils.position.getOffX(target) + target.parentNode.parentNode.parentNode.parentNode.offsetLeft;
+          // console.log(this);
+          var position = this.position;
+          left = Math.min(progressMaxLeft, Math.max(0, (progressMaxLeft * (position / this.durationEstimate)))) + '%';
+          width = Math.min(100, Math.max(0, (100 * (position / this.durationEstimate)))) + '%';
 
           if (this.duration) {
-
+            // console.log(dom.progress.style.left);
             dom.progress.style.left = left;
             dom.progressBar.style.width = width;
 
@@ -1471,7 +1478,8 @@
             curleft += o.x;
 
         }
-
+        // actionData.volume.x = utils.position.getOffX(target) + target.parentNode.parentNode.parentNode.parentNode.offsetLeft;
+        // console.log(curleft);
         return curleft;
 
       }

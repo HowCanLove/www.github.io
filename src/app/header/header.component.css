@@ -80,6 +80,7 @@
     border-radius: 46px;
     float: right;
     padding: 0 20px;
+    margin: 0;
 }
 .navbar-nav a{
 	display: inline-block;
@@ -94,4 +95,36 @@
 .navbar-nav .active{
 	background: #F3FF41;
     color: #000;
+}
+
+
+@media (max-width:670px) {
+    .footer,.wrap {
+        width: 100%
+    }
+    .w1000{
+        width: 100%;
+    }
+    .content {
+        width: 100%
+    }
+    .header-logo {
+        width: 160px;
+        float: none;
+        margin: 0 auto 0px;
+        display: block;
+        height: auto;
+    }
+
+    .navbar-nav {
+        float: none;
+        margin: 0 auto;
+        height: 36px;
+        line-height: 36px
+    }
+
+    .navbar-nav a {
+        font-size: 1.0em;
+        padding: 0 3%
+    }
 }

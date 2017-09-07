@@ -102,3 +102,67 @@
     width: 150px;
     margin-right: 20px
 }
+@media (max-width:1024px) {
+    .content {
+        width: 100%
+    }
+
+    .body-main-right {
+        display: none;
+    }
+    
+    .body-main-right.article-page  {
+        display: block;
+        width: 670px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .article-page .classify-title{
+        display: none;
+    }
+
+    .body-main-left {
+        float: none;
+        margin: 0 auto
+    }
+
+    .diary-box li {
+        width: 80%;
+        margin: 0 auto;
+        float: none
+    }
+
+    .diary-page{
+        padding-left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .diary-text {
+        width: 100%
+    }
+
+    .diary-box:after {
+        display: none
+    }
+
+    .diary-text:after,.diary-text:before {
+        display: none
+    }
+
+    .diary-text,.diary-time {
+        float: none;
+        display: block;
+        overflow: hidden;
+        margin: 0 auto 10px
+    }
+
+    .diary-text {
+        padding: 13px
+    }
+
+    .diary-time {
+        margin: 10px 0 10px
+    }
+}

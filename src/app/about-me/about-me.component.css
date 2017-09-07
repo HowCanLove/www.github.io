@@ -43,3 +43,22 @@
 .article-main p {
     text-indent: 2em;
 }
+
+@media (max-width:1024px) {
+
+    .body-main-right {
+        display: none;
+    }
+    .body-main-left {
+        margin: 0 auto;
+        float: none;
+    }
+
+}
+@media (max-width:670px) {
+    .body-main-left{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5%;
+    }
+}

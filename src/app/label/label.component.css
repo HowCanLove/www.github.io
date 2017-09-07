@@ -61,4 +61,13 @@
     text-shadow: 1px 1px 2px #000;
     box-shadow: 1px 1px 2px #000;
 }
+
+@media (max-width:670px) {
+    .classify-title{
+        display: none;
+    }
+    .classify-list{
+        padding-top: 0;
+    }
+}
 /*右边标签云结束*/

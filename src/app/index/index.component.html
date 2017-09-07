@@ -15,13 +15,13 @@
     <h2 class="article-title">文章推荐<a routerLink="/articleList" class="article-title-more">更多</a></h2>
     <div class="body-main-left-article-box">
       <div class="article-box clearfix" *ngFor="let article of articles">
-          <div class="img-box" *ngIf="article.imgSrc"><a href="http://marryyou.cc/article/{{article.id}}/" target="_blank"><img src="{{article.imgSrc}}" alt=""></a></div>
+          <div class="img-box" *ngIf="article.imgSrc"><a href="http://marryyou.cc/article/{{getId(article.id)}}/" target="_blank"><img src="{{article.imgSrc}}" alt=""></a></div>
           <div class="article" [class.w75]="article.imgSrc">
-              <h3 class="title"><a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">{{article.articleTitle}}</a></h3>
-              <p class="article-text"><a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">{{article.article}}</a></p>
+              <h3 class="title"><a href="http://marryyou.cc/article/{{getId(article.id)}}/" target="_blank">{{article.articleTitle}}</a></h3>
+              <p class="article-text"><a href="http://marryyou.cc/article/{{getId(article.id)}}/" target="_blank">{{article.article}}</a></p>
               <p class="autor">
-                <strong class="autor-left"><span class="lm"><a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">个人</a></span> <span class="dtime">2017-02-06</span></strong>
-                <strong class="autor-right"><span class="pingl">浏览（<a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">{{article.viewNum}}</a>）</span> <span class="viewnum">评论（<a href="http://marryyou.cc/article/{{article.id}}/" target="_blank">{{article.commentNum}}</a>）</span> </strong> 
+                <strong class="autor-left"><span class="lm"><a href="http://marryyou.cc/article/{{getId(article.id)}}/" target="_blank">个人</a></span> <span class="dtime">2017-02-06</span></strong>
+                <strong class="autor-right"><span class="pingl">浏览（<a href="http://marryyou.cc/article/{{getId(article.id)}}/" target="_blank">{{article.viewNum}}</a>）</span> <span class="viewnum">评论（<a href="http://marryyou.cc/article/{{getId(article.id)}}/" target="_blank">{{article.commentNum}}</a>）</span> </strong> 
               </p>
           </div>
       </div>
