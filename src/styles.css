@@ -209,3 +209,7 @@ app-root {
 }
 
 
+
+.sm2-playlist-bd li{
+  word-break: normal;
+}
